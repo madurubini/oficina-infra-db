@@ -132,3 +132,13 @@ no S3 e por secrets do GitHub (nenhum importa código de outro):
 **Ordem para subir:** ① → ② → ③ → ④. **Ordem para derrubar:** ④ → ③ → ② → ①.
 
 Branches: **`main` = produção** (só recebe PR), **`homolog` = homologação**.
+
+## Documentação
+
+- **Swagger e a API:** ficam no [`oficina-app`](https://github.com/madurubini/oficina-app#collection-das-apis); este
+  repositório só cria o banco.
+- **Justificativa do banco e diagrama ER:** [`banco-de-dados.md`](https://github.com/madurubini/oficina-app/blob/homolog/docs/banco-de-dados.md).
+- **Proposta e alternativas comparadas** (RDS, Aurora, Postgres no EKS, DynamoDB): [RFC 0002](https://github.com/madurubini/oficina-app/blob/homolog/docs/rfc/0002-banco-de-dados-na-nuvem.md).
+- **Decisões:** [ADR 0001 — PostgreSQL](https://github.com/madurubini/oficina-app/blob/homolog/docs/adr/0001-escolha-do-banco-de-dados.md) e
+  [ADR 0004 — um banco, um schema por ambiente](https://github.com/madurubini/oficina-app/blob/homolog/docs/adr/0004-ambientes-no-mesmo-cluster.md).
+- **Diagrama de componentes** da nuvem inteira: [`arquitetura.md`, seção 7](https://github.com/madurubini/oficina-app/blob/homolog/docs/arquitetura.md#7-componentes-na-nuvem-fase-3).
